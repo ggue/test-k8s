@@ -15,5 +15,5 @@ spec:
         app: hostpy
     spec:
       containers:
-      - image: 179460961317.dkr.ecr.ap-northeast-2.amazonaws.com/fake-ecr:7
+      - image: 179460961317.dkr.ecr.ap-northeast-2.amazonaws.com/fake-ecr:8
         name: fake-ecr
