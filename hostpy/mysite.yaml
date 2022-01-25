@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hostpy
+  name: hostpy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hostpy
+  template:
+    metadata:
+      labels:
+        app: hostpy
+    spec:
+      containers:
+      - image: 179460961317.dkr.ecr.ap-northeast-2.amazonaws.com/fake-ecr:latest
+        name: fake-ecr
